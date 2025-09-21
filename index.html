@@ -1,40 +1,191 @@
 <!DOCTYPE html>
-<html dir="rtl">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title> مهندس محمدزاده </title>
+  <title>آموزشگاه عصر نخبگان</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-color: #b71c1c;
+      --accent-color: #ffca28;
+      --text-color: #333;
+      --bg-light: #f9f9f9;
+      --bg-white: #fff;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'B Titr', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-color);
+    }
+
+    header {
+      background: linear-gradient(to left, #f44336, #e57373);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    nav {
+      background-color: var(--main-color);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    nav li {
+      margin: 0 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: var(--bg-white);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .section-title {
+      font-size: 22px;
+      color: var(--main-color);
+      margin-bottom: 10px;
+      border-bottom: 2px solid var(--main-color);
+      padding-bottom: 5px;
+    }
+
+    .highlight {
+      font-size: 20px;
+      color: #0d47a1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .definition {
+      font-size: 18px;
+      color: #2e7d32;
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .download {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .download a {
+      background-color: #1976d2;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download a:hover {
+      background-color: #0d47a1;
+    }
+
+    footer {
+      background-color: #eeeeee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 10px 0;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<center>
-  <h1 style="color:red; font-family:'B Titr';">آموزشگاه عصر نخبگان</h1>
-</center>
+  <header>
+    <h1>آموزشگاه عصر نخبگان</h1>
+  </header>
 
-<hr>
+  <nav>
+    <ul>
+      <li><a href="#about">درباره ما</a></li>
+      <li><a href="#services">خدمات</a></li>
+      <li><a href="#contact">تماس با ما</a></li>
+    </ul>
+  </nav>
 
-<p style="font-family:'B Titr'; font-size:20px; color:blue;">
-مهندس محمدزاده مربی و طراح تدریس
-</p>
+  <main>
+    <p class="highlight">مهندس محمدزاده مربی و طراح تدریس</p>
 
-<hr>
+    <h2 class="section-title">تعریف کامپیوتر</h2>
+    <p class="definition">
+      واژهٔ کامپیوتر در سده بیست و یکم میلادی به دستگاهی الکترونیک گفته می‌شود که توانایی ذخیره، مدیریت و جست‌وجوی اطلاعات را دارد، محاسبات انجام می‌دهد و می‌تواند سایر دستگاه‌ها را کنترل کند.
+    </p>
 
-<p style="font-family:'B Titr'; font-size:18px; color:red;">
-تعریف کامپیوتر:
-</p>
+    <img src="1.JPG" alt="تصویر کامپیوتر">
 
-<p style="font-family:'B Titr'; font-size:18px; color:green;">
-واژهٔ کامپیوتر در سده بیست و یکم میلادی به دستگاهی الکترونیک گفته می‌شود که توانایی ذخیره، مدیریت و جست‌وجوی اطلاعات را دارد، محاسبات انجام می‌دهد و می‌تواند سایر دستگاه‌ها را کنترل کند.
-</p>
+    <div class="download">
+      <a href="2.pdf" target="_blank">دانلود فایل PDF لوگو</a>
+    </div>
+  </main>
 
-<img src="1.JPG" width="1000" height="500">
-
-<p>
-  <a href="2.pdf" target="_blank">دانلود فایل PDF لوگو </a>
-</p>
-  
+  <footer>
+    © 2025 آموزشگاه عصر نخبگان | طراحی توسط مهندس محمدزاده
+  </footer>
 
 </body>
 </html>
-
-
-
